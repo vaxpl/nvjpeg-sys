@@ -7,6 +7,8 @@ use std::path::PathBuf;
 const CUDA_VERSION: &str = "10.2";
 #[cfg(feature = "cuda-11-1")]
 const CUDA_VERSION: &str = "11.1";
+#[cfg(feature = "cuda-11-4")]
+const CUDA_VERSION: &str = "11.4";
 
 fn main() {
     let cudart = format!("cudart-{}", CUDA_VERSION);

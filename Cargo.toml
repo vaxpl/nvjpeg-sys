@@ -15,3 +15,4 @@ pkg-config = "0.3"
 default = [ "cuda-11-1" ]
 cuda-10-2 = []
 cuda-11-1 = []
+cuda-11-4 = []
