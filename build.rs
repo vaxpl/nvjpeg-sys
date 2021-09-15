@@ -22,8 +22,6 @@ fn main() {
         .map(|x| format!("-I{}", x.display()))
         .collect();
 
-    println!("cargo:args={:?}", clang_args);
-
     let wrapper_path = PathBuf::from(env::var("OUT_DIR").unwrap()).join("wrapper.h");
     let wrapper_path = wrapper_path.to_str().unwrap();
     let mut wrapper = File::create(wrapper_path).unwrap();
