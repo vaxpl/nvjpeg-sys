@@ -44,6 +44,7 @@ fn main() {
         .impl_partialeq(true)
         .allowlist_function("^cuda.*")
         .allowlist_function("^nvjpeg.*")
+        .allowlist_var("^NVJPEG.*")
         .clang_args(&clang_args)
         .generate()
         .expect("Unable to generate bindings");
